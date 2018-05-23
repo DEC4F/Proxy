@@ -1,6 +1,8 @@
 # Overview
 
-This is a web proxy that accepts HTTP requests from browsers, generates the corresponding HTTP requests for the same objects to the origin servers and forwards the responses to the browsers. 
+This is a __web proxy__ that accepts HTTP requests from browsers, generates the corresponding HTTP requests for the same objects to the origin servers and forwards the responses to the browsers. 
+
+__DNS caching__ is also implemented in this proxy. Each DNS resolution is stored for future use and has a default TTL of 30 seconds
 
 # Installation
 1. `Configure`
@@ -18,4 +20,4 @@ $ cd Proxy
 
 3. `Run`
 
-Simply execute `proxyd.java` and open your configured browser and you are good to go.
+Simply compile and run `proxyd.java` and open your configured browser and you are good to go.
